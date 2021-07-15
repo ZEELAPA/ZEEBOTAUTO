@@ -1,0 +1,21 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZLAPA",
+  "license": "ISC",
+  "dependencies": {
+    "@iamtraction/google-translate": "^1.1.2",
+    "ards-client": "^1.2.7-1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^10.0.0",
+    "owlbot-js": "^2.0.2",
+    "random-words": "^1.1.1",
+    "reconlx": "^1.3.3",
+    "urban-dictionary": "^3.0.1"
+  }
+}
