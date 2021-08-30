@@ -1,3 +1,5 @@
+const distube = require('distube')
+
 module.exports = {
     name: 'join',
     description: "join vc command",
@@ -6,14 +8,13 @@ module.exports = {
       const vc = args.slice(0).join(' ');
       const channel = client.channels.cache.get(vc);
       const cmvc = message.member.voice.channel
-            
-      if(args.slice(0).join(' ')){
-        if(!message.member.permissions.has("MANAGE_MESSAGES")) return message.channel.send("WEWS DI MOD");
-        channel.join();
-      } else if (message.member.voice.channel){
-	     	const connection = await message.member.voice.channel.join();
-	    } else if(!channel, !cmvc) {
-        return message.channel.send('WEWS SAN LODS');
-      } 
+
+      const Guild = message.guild
+      const Memberb = Guild.members.cache.get('831121573594529843');
+      if (!Memberb.voice.channel || Memberb.voice.channel.id === message.member.voice.channel.id){
+        client.distube.voices.join(message.member.voice.channel)
+      } else if(Memberb.voice.channel.id !== message.member.voice.channel.id){
+        return message.channel.send('WEWS SAN LODS')
+      }
     }
 }

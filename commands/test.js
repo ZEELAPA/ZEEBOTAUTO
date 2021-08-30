@@ -5,6 +5,8 @@ module.exports = {
         message.channel.send('TESTTEST');
         const guildid = message.guild.id;
         const list = message.guild.memberCount;
+        const distube = require('distube')
+        console.log(distube.version)
         message.channel.send(`MEMBERCOUNT: ${list}`);
     }
 }

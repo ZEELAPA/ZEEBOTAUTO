@@ -9,13 +9,18 @@
   "author": "ZLAPA",
   "license": "ISC",
   "dependencies": {
-    "@iamtraction/google-translate": "^1.1.2",
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/voice": "^0.6.0",
+    "@distube/youtube-dl": "^2.2.2",
     "ards-client": "^1.2.7-1",
     "discord.js": "^12.5.1",
+    "distube": "^3.0.0-beta.36",
     "dotenv": "^10.0.0",
-    "owlbot-js": "^2.0.2",
-    "random-words": "^1.1.1",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9",
     "reconlx": "^1.3.3",
-    "urban-dictionary": "^3.0.1"
+    "string-progressbar": "^1.0.4",
+    "yt-search": "^2.10.1",
+    "ytdl-core": "^4.9.1"
   }
 }
